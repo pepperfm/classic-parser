@@ -23,9 +23,10 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton(ResponseContract::class, APIBaseResponder::class);
         $this->app->singleton(JsonPlaceholderContract::class, JsonPlaceholderService::class);
     }
-
     /**
      * Bootstrap any application services.
+     *
+     * @param UrlGenerator $url
      */
     public function boot(UrlGenerator $url): void
     {

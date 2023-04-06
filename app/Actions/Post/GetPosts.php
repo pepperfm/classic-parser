@@ -12,6 +12,8 @@ use App\Models\Post;
 class GetPosts
 {
     /**
+     * @param Request $request
+     *
      * @return DataCollectable<array-key, \App\DataObjects\Post\PostData>
      */
     public function handle(Request $request): DataCollectable

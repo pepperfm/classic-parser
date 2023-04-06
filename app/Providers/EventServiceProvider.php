@@ -21,7 +21,6 @@ class EventServiceProvider extends ServiceProvider
             SendEmailVerificationNotification::class,
         ],
     ];
-
     /**
      * Register any events for your application.
      */
@@ -29,7 +28,6 @@ class EventServiceProvider extends ServiceProvider
     {
         //
     }
-
     /**
      * Determine if events and listeners should be automatically discovered.
      */

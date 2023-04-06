@@ -1,7 +1,8 @@
 <?php
 
-return [
+declare(strict_types=1);
 
+return [
     /*
     |--------------------------------------------------------------------------
     | Default Mailer
@@ -14,7 +15,6 @@ return [
     */
 
     'default' => env('MAIL_MAILER', 'smtp'),
-
     /*
     |--------------------------------------------------------------------------
     | Mailer Configurations
@@ -85,7 +85,6 @@ return [
             ],
         ],
     ],
-
     /*
     |--------------------------------------------------------------------------
     | Global "From" Address
@@ -101,7 +100,6 @@ return [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
-
     /*
     |--------------------------------------------------------------------------
     | Markdown Mail Settings
@@ -120,5 +118,4 @@ return [
             resource_path('views/vendor/mail'),
         ],
     ],
-
 ];

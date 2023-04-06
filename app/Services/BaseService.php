@@ -24,7 +24,7 @@ abstract class BaseService
      *
      * @return $this
      */
-    public function setData(\Illuminate\Support\Collection $data): static
+    final public function setData(\Illuminate\Support\Collection $data): static
     {
         $this->data = $data;
 
@@ -34,7 +34,7 @@ abstract class BaseService
     /**
      * @return \Illuminate\Support\Collection
      */
-    public function getData(): \Illuminate\Support\Collection
+    final public function getData(): \Illuminate\Support\Collection
     {
         return $this->data;
     }
@@ -44,7 +44,7 @@ abstract class BaseService
      *
      * @return \Illuminate\Http\Client\Response
      */
-    public function getJson(string $endpoint): \Illuminate\Http\Client\Response
+    final public function getJson(string $endpoint): \Illuminate\Http\Client\Response
     {
         return $this->http
             ->asJson()
@@ -53,11 +53,11 @@ abstract class BaseService
 
     /**
      * @param string $endpoint
-     * @param array $body
+     * @param array<array-key, mixed> $body
      *
      * @return \Illuminate\Http\Client\Response
      */
-    public function postJson(string $endpoint, array $body): \Illuminate\Http\Client\Response
+    final public function postJson(string $endpoint, array $body): \Illuminate\Http\Client\Response
     {
         return $this->http
             ->asForm()

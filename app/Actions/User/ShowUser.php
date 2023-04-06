@@ -13,7 +13,7 @@ class ShowUser
     /**
      * @param \App\Models\User $user
      *
-     * @return \Spatie\LaravelData\Contracts\DataObject<array-key, UserData>
+     * @return \App\DataObjects\User\UserData
      */
     public function handle(Model $user): DataObject
     {

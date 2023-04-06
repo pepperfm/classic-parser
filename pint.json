@@ -4,14 +4,14 @@
     "vendor",
     "node_modules",
     "app/Console/Commands",
-    "app/Http/Middleware"
+    "app/Http/Middleware",
+    "app/Providers",
+    "app/Models"
   ],
   "notPath": [
     "app/Http/Kernel.php",
     "app/Exceptions/Handler.php",
     "app/Console/Kernel.php",
-    "app/Providers/AuthServiceProvider.php",
-    "app/Models/User.php",
     "app/Http/Middleware"
   ],
   "rules": {

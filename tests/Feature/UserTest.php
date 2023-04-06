@@ -120,9 +120,9 @@ class UserTest extends TestCase
         ]);
     }
 
-    public function test_users_show()
+    public function test_users_show(): void
     {
-        $user = User::factory()/*->hasPosts()*/->create();
+        $user = User::factory()->create();
         $response = $this->getJson("/api/users/$user->id");
 
         $response->assertOk();
@@ -152,7 +152,7 @@ class UserTest extends TestCase
                         'catchPhrase',
                         'bs',
                     ],
-                    'posts'
+                    'posts',
                 ],
             ],
         ]);

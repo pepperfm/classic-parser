@@ -53,6 +53,7 @@
             "@php artisan key:generate --ansi"
         ],
         "lint": "phplint",
+        "php-cs-fixer": "php-cs-fixer --allow-risky=yes --config=./.php-cs-fixer.php",
         "test": "phpunit"
     },
     "extra": {
@@ -64,7 +65,6 @@
                 "stop-on-failure": ["pre-commit", "pre-push"]
             },
             "pre-commit": [
-                "branch=\"$(git rev-parse --abbrev-ref HEAD)\"\n\nif [ \"$branch\" = \"master\" ]; then\n  echo \"You can't commit directly to master branch\"\n  exit 1\nfi",
                 "make pint",
                 "make lint",
                 "make stan"

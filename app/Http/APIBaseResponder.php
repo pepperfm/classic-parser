@@ -48,7 +48,7 @@ class APIBaseResponder implements ResponseContract
     }
 
     /**
-     * @param array $data
+     * @param array<string, mixed> $data
      * @param string $message
      *
      * @return JsonResponse
@@ -61,7 +61,7 @@ class APIBaseResponder implements ResponseContract
     }
 
     /**
-     * @param array $data
+     * @param array<string, mixed> $data
      * @param string $message
      *
      * @return JsonResponse

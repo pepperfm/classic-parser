@@ -4,7 +4,7 @@
 /public/hot
 /public/storage
 /storage/*.key
-/storage/.php.cs
+/storage/.php_cs
 /vendor
 .env
 .env.backup

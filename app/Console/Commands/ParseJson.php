@@ -15,14 +15,12 @@ class ParseJson extends Command
      * @var string
      */
     protected $signature = 'app:parse-json';
-
     /**
      * The console command description.
      *
      * @var string
      */
     protected $description = 'Parse base data from service';
-
     /**
      * Execute the console command.
      */

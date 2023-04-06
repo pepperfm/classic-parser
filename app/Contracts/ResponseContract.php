@@ -11,7 +11,7 @@ interface ResponseContract
     /**
      * Success response method
      *
-     * @param array $data
+     * @param array<string, mixed> $data
      * @param string $message
      * @param int $httpStatusCode
      *

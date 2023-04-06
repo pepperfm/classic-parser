@@ -13,7 +13,7 @@ class ShowComment
     /**
      * @param \App\Models\Comment $comment
      *
-     * @return \Spatie\LaravelData\Contracts\DataObject<array-key, CommentData>
+     * @return \App\DataObjects\Comment\CommentData
      */
     public function handle(Model $comment): DataObject
     {

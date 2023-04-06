@@ -12,7 +12,8 @@ use App\DataObjects\User\UserAddressData;
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable;
+    use HasFactory;
+    use Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -32,7 +33,7 @@ class User extends Authenticatable
     /**
      * The attributes that should be cast.
      *
-     * @var array<array-key, string>
+     * @var array<string, string>
      */
     protected $casts = [
         'address' => UserAddressData::class,

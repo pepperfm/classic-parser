@@ -11,6 +11,9 @@ use App\Models\User;
 
 class UserController
 {
+    /**
+     * @param \App\Http\APIBaseResponder $json
+     */
     public function __construct(public ResponseContract $json)
     {
     }

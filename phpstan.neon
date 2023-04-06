@@ -19,8 +19,5 @@ parameters:
 
     ignoreErrors:
 #        - '#PHPDoc tag @var#'
-        - '#Call to an undefined method Illuminate\\Database\\Eloquent\\Model#'
-        - '#Access to an undefined property Illuminate\\Database\\Eloquent\\Model#'
-        - '#Call to an undefined method Illuminate\\Database\\Eloquent\\Builder#'
 
 #    checkMissingIterableValueType: false

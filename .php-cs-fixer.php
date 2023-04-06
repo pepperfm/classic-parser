@@ -236,9 +236,8 @@ $finder = Finder::create()
     ->notName([
         '*.blade.php', '*.vue', '*.js', '*.css',
         '*Provider.php', '*Kernel.php', '*Handler.php',
-        '*User.php', 'Middleware/*.php',
     ])
-    ->notPath(['Middleware', 'Commands'])
+    ->notPath(['Middleware', 'Commands', 'Models'])
     ->ignoreDotFiles(true)
     ->ignoreVCS(true);
 

@@ -12,6 +12,8 @@ use App\Models\User;
 class GetUsers
 {
     /**
+     * @param Request $request
+     *
      * @return DataCollectable<array-key, \App\DataObjects\User\UserData>
      */
     public function handle(Request $request): \Illuminate\Contracts\Support\Responsable

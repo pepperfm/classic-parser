@@ -13,7 +13,7 @@ class ShowPost
     /**
      * @param \App\Models\Post $post
      *
-     * @return \Spatie\LaravelData\Contracts\DataObject<array-key, PostData>
+     * @return \App\DataObjects\Post\PostData
      */
     public function handle(Model $post): DataObject
     {
